@@ -42,11 +42,11 @@ const AdvantageSection = styled.div`
     }
     .advantages-cta > h4{
         font-weight: 600;
-        font-size: 12.5px;
+        font-size: 12px;
         color: #4e4e4eff;
     }
     .advantages-cta > h3{
-        font-size: 32px;
+        font-size: 28px;
         background: linear-gradient(to right bottom, #3967feff, #39a5feff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -56,7 +56,7 @@ const AdvantageSection = styled.div`
         margin: 24px 0;
     }
     .advantages-cta > span{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
     }
     .advantages-cta > span > s{
@@ -64,17 +64,19 @@ const AdvantageSection = styled.div`
         color: #3E97FF;
     }
     .advantages-cta > strong{
-        font-size: 45px;
+        font-size: 40px;
         font-weight: 900;
         color: #44D151;
     }
     .advantages-cta > button{
         background: #44D151;
         margin: 20px 0 16px 0;
+        padding: 18px 0;
+        font-size: 15px;
     }
     .advantages-cta > img{
         width: 100%;
-        opacity: 0.4;
+        opacity: 0.3;
     }
 `
 export default function Advantages(){
