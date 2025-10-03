@@ -10,7 +10,7 @@ const AboutSection = styled.section`
       padding: 32px 32px 48px 32px;
    }
    & > #info-container > #description{
-      padding: 16px 20px;
+      padding: 20px;
       border: 1px solid #9D6F01;
       border-radius: 12px;
       text-align: center;
@@ -24,7 +24,7 @@ const AboutSection = styled.section`
       font-weight: bold;
       font-size: 18px;
       text-transform: uppercase;
-      margin: 24px 0;
+      margin: 38px 0;
    }
    & > #info-container > #info-box-container{
       display: flex;
@@ -58,7 +58,7 @@ export default function About(){
       <AboutSection>
          <div id="info-container">
             <div id="description">
-               <span>O concurso de nível médio para Técnico do Seguro Social está cada vez mais próximo de acontecer. Com o pedido já protocolado pelo INSS, o concurso aguarda autorização no Ministério da Gestão e Inovação em Serviços Públicos, e a expectativa é de que o edital seja publicado ainda em 2025</span>
+               <span>O concurso de nível médio para Técnico do Seguro Social está cada vez mais próximo de acontecer. Com o pedido já protocolado pelo INSS, o concurso aguarda autorização no MGISP, e a expectativa é de que o edital seja publicado ainda em 2025.</span>
             </div>
 
             <h2>Saiba mais sobre o Concurso</h2>

@@ -20,16 +20,17 @@ const ReviewSection = styled.section`
       position: absolute;
    }
    & > #reviews-container{
-      padding: 24px;
+      padding: 48px 32px 0 32px;
       position: relative;
-      z-index: 2;
+      z-index: 2;    
    }
-   & > #reviews-container h3{
+   & > #reviews-container > h3{
       font-weight: 700;
       font-size: 22px;
       text-align: center;
       line-height: 30px;
       z-index: 99;
+      margin-bottom: 36px;
    }
    & > #reviews-container #slide-controls{
       display: flex;
@@ -38,6 +39,7 @@ const ReviewSection = styled.section`
       gap: 32px;
       margin: 12px 0 24px;
       background: none;
+      display: none;
    }
    & > #reviews-container #slide-controls > button{
       background: none;
@@ -54,7 +56,7 @@ const ReviewSection = styled.section`
       width:100%;
    }
    & > #reviews-container #slide #slide-container{
-      border: 2px solid var(--destaque-secundario);
+      border: 3px solid var(--destaque-secundario);
       border-radius: 10px;
       z-index: 24;
       max-width: 600px;
@@ -87,7 +89,7 @@ export default function Reviews(){
    return(
       <ReviewSection>
          <div id="reviews-container">
-            <h3>Veja o resultado de alguns alunos que seguiram a metodologia</h3>
+            <h3>Resultados de alunos que <br/> seguiram a metodologia</h3>
 
             <div id="slide-controls">
                <button id='previous'>
@@ -113,11 +115,6 @@ export default function Reviews(){
                   <div className='circle'></div>
                </div>
             </div>
-
-            <a href="/checkout" id="btn-2" className="btn" data-analytics-event>
-               <span>Comprar agora</span>
-               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
-            </a>
          </div>
       </ReviewSection>
    )

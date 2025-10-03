@@ -38,18 +38,18 @@ const MainTag = styled.main`
       text-align: center;
    }
    & > #hero-container > #hero-content > img{
-      width: 210px;
+      width: 200px;
       height: auto;
    }
    & > #hero-container > #hero-content > h1{
       font-weight: 600;
-      font-size: 21px;
+      font-size: 20.5px;
       margin: 18px 0 20px 0;
       line-height: 32px;
    }
    & > #hero-container > #hero-content > p{
       font-weight: 300;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 27px;
    }
    & > #hero-container > #hero-price{

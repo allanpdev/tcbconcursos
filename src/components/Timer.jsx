@@ -8,22 +8,27 @@ const TimerSection = styled.section`
       color: #fff;
    }
    & > #offer-ending-container{
-      padding: 64px 24px;
+      padding: 0px 32px 54px 32px;
       position: relative;
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: 32px;
+      margin-top: -1px;
    }
    & > #offer-ending-container > #offer-ending-divider{
-      position: absolute;
+      // position: absolute;
       width: 100%;
-      top: 0;
+      // top: 0;
+      margin: 12px 0;
    }
    & > #offer-ending-container > h3{
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 21px;
+      font-weight: 400;
       text-transform: uppercase;
+   }
+   & > #offer-ending-container > img{
+      // margin: 20px;
    }
    & > #offer-ending-container #timer-container{
       display: flex;
@@ -104,7 +109,7 @@ export default function OfferEnding(){
    return(
       <TimerSection>
          <div id='offer-ending-container'>
-            <Image src={"/images/divisor.png"} width={500} height={20} id='offer-ending-divider' alt='Divisor de seções'/>
+            <Image src={"/images/divisor.png"} width={432} height={8} id='offer-ending-divider' alt='Divisor de seções'/>
             <h3>Oferta acabando em breve</h3>
 
             <div id='timer-container'>
@@ -133,9 +138,14 @@ export default function OfferEnding(){
                </div>
             </div>
 
-            <div id="progress">
+            {/* <div id="progress">
                <div id='progress-bar'></div>
-            </div>
+            </div> */}
+
+            <a href="/checkout" id="btn-2" className="btn" data-analytics-event>
+               <span>Comprar agora</span>
+               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
+            </a>
          </div>
       </TimerSection>
    )

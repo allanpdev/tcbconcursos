@@ -3,3 +3,8 @@
    src: url('/fonts/Inter.ttf') format('truetype');
    font-display: swap;
 }
+@font-face{
+   font-family: 'Nunito';
+   src: url('/fonts/Nunito.ttf') format('truetype');
+   font-display: swap;
+}

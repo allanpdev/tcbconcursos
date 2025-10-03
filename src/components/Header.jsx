@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const HeaderTag = styled.header`
    &{
       width: 100%;
+      margin-bottom: -1px;
    }
    & > #header-container{
       background: var(--destaque);
