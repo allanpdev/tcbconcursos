@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 const AdvantageSection = styled.div`
-    &{
-    
-    }
-
     .advantages-container{
-        padding: 50px 24px;
+        padding: 46px 32px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 40px;
     }
     .advantages-container > h2{
-        font-size: 23px;
+        font-size: 22px;
         text-align: center;
         font-weight: 750;
     }
@@ -24,10 +20,15 @@ const AdvantageSection = styled.div`
         display: flex;
         align-items: center;
         gap: 12px;
-        font-weight: 600;
-        font-size: 18px;
     }
-
+    .advantage-box > span{
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .advantage-box > img{
+        width: 30px;
+        height: auto;
+    }
     .advantages-cta{
         padding: 32px;
         border-radius: 16px;
@@ -71,7 +72,6 @@ const AdvantageSection = styled.div`
         margin: 20px 0 12px 0;
     }
 `
-
 export default function Advantages(){
     return(
         <AdvantageSection>
@@ -107,7 +107,7 @@ export default function Advantages(){
 
                 <div className="advantages-cta">
                     <h4>🚨Oferta por tempo limitado🚨</h4>
-                    <h3>Aproveite o desconto!</h3>
+                    <h3>Aproveite o <br/> desconto!</h3>
                     <span>De <s>R$44,90</s> por:</span>
                     <strong>R$ 22,90</strong>
                     <button className='btn'>Garantir apostila</button>

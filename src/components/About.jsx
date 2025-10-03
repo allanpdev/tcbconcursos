@@ -7,7 +7,7 @@ const AboutSection = styled.section`
       color: #fff;
    }
    & > #info-container{
-      padding: 24px;
+      padding: 32px 32px 48px 32px;
    }
    & > #info-container > #description{
       padding: 16px 20px;
