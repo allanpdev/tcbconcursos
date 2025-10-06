@@ -16,8 +16,9 @@ const OverviewSection = styled.section`
       margin: 32px 0;
    }
    & > #overview-container > h3{
-      font-size: 23px;
-      font-weight: 550;
+      font-size: 21px;
+      text-transform: uppercase;
+      font-weight: 600;
       background: linear-gradient(to bottom, #2f3cb5, #36afff);
       background-clip: text;
       color: transparent;
@@ -48,7 +49,7 @@ const OverviewSection = styled.section`
 
    #pricing{
       text-align: center;
-      margin-bottom: 24px;
+      margin: 32px 0;
    }
    #pricing > h3{
       font-size: 18px;
@@ -63,12 +64,12 @@ const OverviewSection = styled.section`
       gap: 6px;
    }
    #price > span{
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 600;
       
    }
    #price > strong{
-      font-size: 53px;
+      font-size: 64px;
       font-weight: 700;
    }
 
@@ -114,6 +115,7 @@ const OverviewSection = styled.section`
       color: #ffffff;
       text-transform: uppercase;
       font-weight: 600;
+      place-self: flex-end;
    }
 `
 
@@ -157,10 +159,7 @@ export default function Overview(){
                </div>               
             </div>
 
-            <button className="btn" data-analytics-event>
-               <a href="/checkout">Comprar agora</a>
-               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
-            </button>
+            
 
             <div id="pricing">
                <h3>2x de R$15,90 ou</h3>
@@ -191,11 +190,12 @@ export default function Overview(){
                <div id="pix-30-off">
                   <span>30% off</span>
                </div>
-
-
-
-
             </div>
+
+            <button className="btn" data-analytics-event>
+               <a href="/checkout">Comprar agora</a>
+               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
+            </button>
          </div>
       </OverviewSection>
    )
