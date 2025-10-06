@@ -16,7 +16,7 @@ const Div = styled.div`
    & > .guarantee-container > h2{
       font-size: 22px;
       font-weight: 600;
-      text-transform: uppercase;
+      
    }
    & > .guarantee-container > p{
       font-size: 18px;

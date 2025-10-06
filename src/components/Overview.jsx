@@ -11,10 +11,14 @@ const OverviewSection = styled.section`
       flex-direction: column;
       align-items: center;
    }
+   & > #overview-container > button{
+      background: linear-gradient(to right, #004ea7, var(--destaque), #004da5);
+      margin: 32px 0;
+   }
    & > #overview-container > h3{
-      font-size: 19px;
-      text-transform: uppercase;
-      background: linear-gradient(to bottom, #2F70B5, #76C7FE);
+      font-size: 23px;
+      font-weight: 550;
+      background: linear-gradient(to bottom, #2f3cb5, #36afff);
       background-clip: text;
       color: transparent;
       margin: 24px 0 32px 0;
@@ -39,55 +43,77 @@ const OverviewSection = styled.section`
       font-weight: 500;
       color: #0b0430;
    }
-   & > #overview-container > #cta-box{
-      padding: 32px;
-      border: 1px solid #1B58C9;
-      border-radius: 20px;
+
+
+
+   #pricing{
+      text-align: center;
+      margin-bottom: 24px;
+   }
+   #pricing > h3{
+      font-size: 18px;
+      font-weight: 500;
+      color: #FF3D67;
+   
+   }
+   
+   #price{
+      display: flex;
+      align-items: center;
+      gap: 6px;
+   }
+   #price > span{
+      font-size: 15px;
+      font-weight: 600;
+      
+   }
+   #price > strong{
+      font-size: 53px;
+      font-weight: 700;
+   }
+
+
+
+
+   #pix{
+      border: 1px solid #4DB6AC;
+      border-radius: 12px;
       width: 100%;
+      padding: 32px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      gap: 28px;
+   }
+   #pix-heading{
+      display: flex;
       align-items: center;
-      margin-top: 44px;
-      text-align: center;
+      gap: 7px;
    }
-   & > #overview-container > #cta-box > h3{
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 500;
-      color: #2b2b2b;
-   }
-   & > #overview-container > #cta-box > h2{
-      background: linear-gradient(to right, #2F70B5, #76C7FE);
-      background-clip: text;
-      color: transparent;
-      text-transform: uppercase;
-      font-size: 34px;
-      font-weight: 800;
-      margin: 20px 0;
-   }
-   & > #overview-container > #cta-box > span{
-      font-weight: 600;
+   #pix-heading > h3{
+      font-weight: 550;
       font-size: 18px;
+   }
+   #pix-box-container{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+   .pix-box{
+      display: flex;
+      justify-content: space-between;
+   }
+   .pix-box > strong{
+      color: #44a097;
+      font-weight: 700;
+   }
+   #pix-30-off{
+      background: #4DB6AC;
+      width: fit-content;
+      padding: 4px 28px;
+      border-radius: 50px;
+      color: #ffffff;
       text-transform: uppercase;
-      color: #000;
-   }
-   & > #overview-container > #cta-box > span > s{
-      color: #3E97FF;
-   }
-   & > #overview-container > #cta-box > strong{
-      font-size: 42px;
-      font-weight: 900;
-      color: #44D151;
-   }
-   & > #overview-container > #cta-box > button{
-      background: #44D151;
-      text-decoration: none;
-      margin: 30px 0 20px 0;
-   }
-   & > #overview-container > #cta-box > button > a{
-      color: #fff;
-      text-decoration: none;
+      font-weight: 600;
    }
 `
 
@@ -131,19 +157,44 @@ export default function Overview(){
                </div>               
             </div>
 
-            <div id="cta-box">
-               <h3>🚨Oferta por tempo limitado🚨</h3>
-               <h2>Aproveite o desconto!</h2>
+            <button className="btn" data-analytics-event>
+               <a href="/checkout">Comprar agora</a>
+               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
+            </button>
 
-               <span>De <s>R$ 34,90</s> por: </span>
-               <strong>R$ 22,90</strong>
+            <div id="pricing">
+               <h3>2x de R$15,90 ou</h3>
+               <div id="price">
+                  <span>R$</span>
+                  <strong>34,90</strong>
+               </div>
+            </div>
 
-               <button className="btn" data-analytics-event>
-                  <a href="/checkout">Comprar agora</a>
-                  <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
-               </button>
+            <div id="pix">
+               <div id="pix-heading">
+                  <Image src={"/images/pix.png"} width={33} height={30} alt="Ícone PIX"/>
+                  <h3>Pix</h3>
+               </div>
 
-               <Image src={"/images/satisfaction.png"} width={321} height={46}/>
+               <div id="pix-box-container">
+                  <div className="pix-box">
+                     <span>Taxa:</span>
+                     <strong>0,00</strong>
+                  </div>
+
+                  <div className="pix-box">
+                     <span>Aprovação:</span>
+                     <strong>Imediata</strong>
+                  </div>
+               </div>
+
+               <div id="pix-30-off">
+                  <span>30% off</span>
+               </div>
+
+
+
+
             </div>
          </div>
       </OverviewSection>
