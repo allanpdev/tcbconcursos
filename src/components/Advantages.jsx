@@ -23,7 +23,8 @@ const AdvantageSection = styled.div`
     }
     .advantage-box > span{
         font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
+        color: #2e2e2e;
     }
     .advantage-box > img{
         width: 30px;
@@ -57,7 +58,7 @@ const AdvantageSection = styled.div`
         margin: 20px 0;
     }
     .advantages-cta > span{
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
     }
     .advantages-cta > span > s{
@@ -65,7 +66,7 @@ const AdvantageSection = styled.div`
         color: #3E97FF;
     }
     .advantages-cta > strong{
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 800;
         color: #44D151;
     }
@@ -115,7 +116,7 @@ export default function Advantages(){
 
                 <div className="advantages-cta">
                     <h4>🚨Oferta por tempo limitado🚨</h4>
-                    <h3>Aproveite o <br/> desconto!</h3>
+                    <h3>Aproveite a<br/> oferta!</h3>
                     <span>De <s>R$44,90</s> por:</span>
                     <strong>R$ 22,90</strong>
                     <button className='btn'>Garantir apostila</button>
