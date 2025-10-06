@@ -33,7 +33,7 @@ const AdvantageSection = styled.div`
         padding: 32px;
         border-radius: 16px;
         // border: 1px solid #bdbdbdff;
-        border: 1px solid #1B58C9;
+        border: 1px solid #b2c8f0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -46,6 +46,7 @@ const AdvantageSection = styled.div`
         color: #4e4e4eff;
     }
     .advantages-cta > h3{
+        letter-spacing: 1px;
         font-size: 28px;
         background: linear-gradient(to right bottom, #3967feff, #39a5feff);
         -webkit-background-clip: text;
@@ -53,7 +54,7 @@ const AdvantageSection = styled.div`
         background-clip: text;
         color: transparent;
         font-weight: 900;
-        margin: 24px 0;
+        margin: 20px 0;
     }
     .advantages-cta > span{
         font-size: 15px;

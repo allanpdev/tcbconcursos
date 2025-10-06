@@ -23,6 +23,7 @@ const OverviewSection = styled.section`
       display: flex;
       flex-direction: column;
       gap: 15px;
+      width: 100%;
    }
    & > #overview-container > #overview-box-container > .overview-box{
       display: flex;

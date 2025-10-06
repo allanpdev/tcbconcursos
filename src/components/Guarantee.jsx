@@ -9,7 +9,7 @@ const Div = styled.div`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      padding: 70px 24px;
+      padding: 60px 24px;
       color: #fff;
       gap: 18px;
    }

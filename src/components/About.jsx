@@ -58,7 +58,7 @@ export default function About(){
       <AboutSection>
          <div id="info-container">
             <div id="description">
-               <span>O concurso de nível médio para Técnico do Seguro Social está cada vez mais próximo de acontecer. Com o pedido já protocolado pelo INSS, o concurso aguarda autorização no MGISP, e a expectativa é de que o edital seja publicado ainda em 2025.</span>
+               <span>O concurso Técnico do Seguro Social está cada vez mais próximo de acontecer. Com o pedido já protocolado pelo INSS, o concurso aguarda autorização no Ministério, e a expectativa é de que o edital seja publicado ainda em 2025.</span>
             </div>
 
             <h2>Saiba mais sobre o Concurso</h2>
