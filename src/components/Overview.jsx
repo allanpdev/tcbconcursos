@@ -193,8 +193,8 @@ export default function Overview(){
             </div>
 
             <button className="btn" data-analytics-event>
-               <a href="/checkout">Comprar agora</a>
-               <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
+               <a href="/checkout">Garantir apostila</a>
+               <Image src={"/icons/arrow-right-white.svg"} width={9} height={16} alt='Ilustrativo de botão'/>
             </button>
          </div>
       </OverviewSection>
