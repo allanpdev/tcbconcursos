@@ -43,17 +43,17 @@ const AdvantageSection = styled.div`
     .advantages-cta > h4{
         font-weight: 600;
         font-size: 12px;
-        color: #4e4e4eff;
+        color: #4e4e4eb9;
     }
     .advantages-cta > h3{
-        letter-spacing: 1px;
-        font-size: 28px;
+        letter-spacing: 0px;
+        font-size: 26px;
         background: linear-gradient(to right bottom, #3967feff, #39a5feff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         color: transparent;
-        font-weight: 900;
+        font-weight: 800;
         margin: 20px 0;
     }
     .advantages-cta > span{
@@ -66,7 +66,7 @@ const AdvantageSection = styled.div`
     }
     .advantages-cta > strong{
         font-size: 40px;
-        font-weight: 900;
+        font-weight: 800;
         color: #44D151;
     }
     .advantages-cta > button{
