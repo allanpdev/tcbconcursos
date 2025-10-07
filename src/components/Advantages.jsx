@@ -29,7 +29,7 @@ const AdvantageSection = styled.div`
         color: #2e2e2e;
     }
     .advantage-box > img{
-        width: 30px;
+        width: 25px;
         height: auto;
     }
     .advantages-cta{
