@@ -2,17 +2,19 @@ import styled from 'styled-components'
 import Image from 'next/image'
 
 const FooterSection = styled.footer`
+    &{ 
+        position: relative;
+    }
     #footer-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 32px 15px 32px;
-        position: relative;
+        padding: 32px 32px 10px 32px;
     }
     #moldura{
         position: absolute;
         width: 100%;
-        height: 50px;
+        height: 70px;
     }
     #footer-heading > h4{
         font-size: 16px;
