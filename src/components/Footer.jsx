@@ -9,12 +9,12 @@ const FooterSection = styled.footer`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 32px 10px 32px;
+        padding: 32px 32px 0px 32px;
     }
     #moldura{
         position: absolute;
         width: 100%;
-        height: 70px;
+        height: 45px;
     }
     #footer-heading > h4{
         font-size: 16px;
