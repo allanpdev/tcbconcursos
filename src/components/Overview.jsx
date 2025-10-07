@@ -84,6 +84,10 @@ const OverviewSection = styled.section`
       font-size: 15px;
       font-weight: 500;
       margin: 6px 0 16px 0;
+      color: #000;
+      font-weight: 400;
+      place-self: flex-start;
+      margin-left: 20px;
    }
    #overview-pricing > h3{
       font-size: 16px;
@@ -157,7 +161,7 @@ export default function Overview(){
             </div>
 
             <div id="overview-pricing">
-               <Image src={"/images/checked-square.png"} width={55} height={55} alt="Check"/>
+               <Image src={"/images/checked-square.png"} width={70} height={56} alt="Check"/>
 
                <h3>De <s>R$54,87</s> por:</h3>
 
@@ -187,14 +191,14 @@ export default function Overview(){
                      <input type="radio" />
                   </div>
 
-                  <div className="payment">
+                  {/* <div className="payment">
                      <div className="payment-heading">
                         <Image src={"/images/apple.png"} width={24} height={26} alt="Pix"/>
                         <span>Apple Pay</span>
                      </div>
 
                      <input type="radio" />
-                  </div>
+                  </div> */}
 
                   <div className="payment">
                      <div className="payment-heading">
