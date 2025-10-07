@@ -9,7 +9,7 @@ const AdvantageSection = styled.div`
         gap: 40px;
     }
     .advantages-container > h2{
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
         font-weight: 750;
     }
