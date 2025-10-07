@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Image from 'next/image'
+
 const AdvantageSection = styled.div`
     .advantages-container{
         padding: 46px 32px;
@@ -119,7 +121,10 @@ export default function Advantages(){
                     <h3>Aproveite a<br/> oferta!</h3>
                     <span>De <s>R$44,90</s> por:</span>
                     <strong>R$ 22,90</strong>
-                    <button className='btn'>Garantir apostila</button>
+                    <button className='btn'>
+                        <span>Garantir apostila</span>
+                        <Image src={"/icons/arrow-right-white.svg"} width={9} height={16} alt='Ilustrativo de botão'/>
+                    </button>
                     <img src="/images/satisfaction.png" alt="" />
                 </div>
             </div>

@@ -36,6 +36,7 @@ button{
   color: #fff;
   font-weight: 750;
   font-family: 'Nunito' !important;
+  text-decoration: none;
 }
 .btn > a {
   color: #fff;

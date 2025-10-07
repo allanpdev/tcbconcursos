@@ -56,7 +56,6 @@ const OverviewSection = styled.section`
    #price > span{
       font-size: 20px;
       font-weight: 600;
-      
    }
    #price > strong{
       font-size: 52px;
@@ -68,13 +67,13 @@ const OverviewSection = styled.section`
 
 
    #overview-pricing{
-      border: 1px solid blue;
+      border: 1px solid #0059ff;
       border-radius: 24px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 32px;
+      padding: 32px 24px 42px 24px;
       margin: 40px 0 32px 0;
    }
    #overview-pricing > h4{
@@ -85,6 +84,9 @@ const OverviewSection = styled.section`
    #overview-pricing > h3{
       font-size: 16px;
       font-weight: 500;
+      color: #000;
+   }
+   #overview-pricing > h3 > s{
       color: #006eff;
    }
 
@@ -201,7 +203,7 @@ export default function Overview(){
             </div>            
 
             <button className="btn" data-analytics-event>
-               <a href="/checkout">Garantir apostila</a>
+               <a href="/checkout">Garantir oferta</a>
                <Image src={"/icons/arrow-right-white.svg"} width={9} height={16} alt='Ilustrativo de botão'/>
             </button>
          </div>

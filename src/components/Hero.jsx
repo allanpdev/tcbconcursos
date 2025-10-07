@@ -107,7 +107,7 @@ O concurso do INSS é uma das oportunidades mais disputadas do país — e quem 
             <div id='hero-cta'>
                <a href="/checkout" id="btn-1" className="btn" data-analytics-event>
                   <span>Comprar agora</span>
-                  <Image src={"/icons/arrow-right-white.svg"} width={11} height={20} alt='Ilustrativo de botão'/>
+                  <Image src={"/icons/arrow-right-white.svg"} width={9} height={15} alt='Ilustrativo de botão'/>
                </a>
 
                <small>🚨 30% off até 15/07/2025 🚨</small>
