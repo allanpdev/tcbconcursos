@@ -7,6 +7,7 @@ const FooterSection = styled.footer`
         justify-content: space-between;
         align-items: center;
         padding: 32px;
+        border-bottom: 1px solid gray;
     }
     #footer-heading > h4{
         font-size: 16px;
