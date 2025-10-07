@@ -59,8 +59,9 @@ const OverviewSection = styled.section`
       
    }
    #price > strong{
-      font-size: 64px;
-      font-weight: 700;
+      font-size: 52px;
+      margin-top: 4px;
+      font-weight: 750;
    }
 
 
@@ -84,8 +85,7 @@ const OverviewSection = styled.section`
    #overview-pricing > h3{
       font-size: 16px;
       font-weight: 500;
-      color: #0051ff;
-      text-transform: uppercase;
+      color: #006eff;
    }
 
 
