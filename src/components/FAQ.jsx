@@ -8,7 +8,13 @@ const FAQSection = styled.div`
         flex-direction: column;
         align-items: center;
         padding: 48px 32px 48px 32px;
-        gap: 32px;
+        gap: 42px;
+    }
+    & > h2{
+        font-size: 19px;
+        text-transform: uppercase;
+        font-family: 'Nunito';
+        font-weight: 750;
     }
     #faq-container{
         display: flex;
@@ -22,6 +28,7 @@ const FAQSection = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 2px;
     }
     .faq-box > span{
         font-weight: 450;
