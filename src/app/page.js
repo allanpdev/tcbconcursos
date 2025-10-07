@@ -9,6 +9,7 @@ import Timer from "../components/Timer"
 import Offer from '../components/Offer'
 import Overview from '../components/Overview'
 import Guarantee from '../components/Guarantee'
+import FAQ from '../components/FAQ'
 
 export default function Home() {
   return(
@@ -22,7 +23,7 @@ export default function Home() {
       <Offer/>
       <Guarantee/>
       <Overview/>
-      
+      <FAQ/>
     </div>
   );
 }
