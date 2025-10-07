@@ -10,6 +10,7 @@ import Offer from '../components/Offer'
 import Overview from '../components/Overview'
 import Guarantee from '../components/Guarantee'
 import FAQ from '../components/FAQ'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return(
@@ -24,6 +25,7 @@ export default function Home() {
       <Guarantee/>
       <Overview/>
       <FAQ/>
+      <Footer/>
     </div>
   );
 }

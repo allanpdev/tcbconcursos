@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const FAQSection = styled.div`
     &{
-        background: #F8F9FF;
+        background: #f4f5ff;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 48px 32px 48px 32px;
+        padding: 48px 32px 40px 32px;
         gap: 42px;
     }
     & > h2{
@@ -20,19 +20,19 @@ const FAQSection = styled.div`
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 12px;
+        gap: 14px;
     }
     .faq-box{
-        background: linear-gradient(to bottom right, #1C41D5, #147aee);
+        background: #ffffff;
         padding: 18px 22px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 2px;
+        border-radius: 8px;
     }
     .faq-box > span{
         font-weight: 450;
-        color: #F8F9FF;
+        color: #000000;
         font-size: 16px;
     }
 `
@@ -45,27 +45,27 @@ export default function FAQ(){
             <div id='faq-container'>
                 <div className='faq-box'>
                     <span>Como acesso o conteúdo?</span>
-                    <Image src={"/icons/arrow-down.svg"} width={17} height={17} alt="Icone"/>
+                    <Image src={"/icons/arrow-down-black.svg"} width={24} height={24} alt="Icone"/>
                 </div>
 
                 <div className='faq-box'>
                     <span>Como acesso o conteúdo?</span>
-                    <Image src={"/icons/arrow-down.svg"} width={17} height={17} alt="Icone"/>
+                    <Image src={"/icons/arrow-down-black.svg"} width={24} height={24} alt="Icone"/>
                 </div>
 
                 <div className='faq-box'>
                     <span>Como acesso o conteúdo?</span>
-                    <Image src={"/icons/arrow-down.svg"} width={17} height={17} alt="Icone"/>
+                    <Image src={"/icons/arrow-down-black.svg"} width={24} height={24} alt="Icone"/>
                 </div>
 
                 <div className='faq-box'>
                     <span>Como acesso o conteúdo?</span>
-                    <Image src={"/icons/arrow-down.svg"} width={17} height={17} alt="Icone"/>
+                    <Image src={"/icons/arrow-down-black.svg"} width={24} height={24} alt="Icone"/>
                 </div>
 
                 <div className='faq-box'>
                     <span>Como acesso o conteúdo?</span>
-                    <Image src={"/icons/arrow-down.svg"} width={17} height={17} alt="Icone"/>
+                    <Image src={"/icons/arrow-down-black.svg"} width={24} height={24} alt="Icone"/>
                 </div>
             </div>
         </FAQSection>
