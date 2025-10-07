@@ -77,6 +77,9 @@ const OverviewSection = styled.section`
       padding: 32px 20px 42px 20px;
       margin: 40px 0 32px 0;
    }
+   #overview-pricing > img{
+      margin-bottom: 20px;
+   }
    #overview-pricing > h4{
       font-size: 15px;
       font-weight: 500;
@@ -100,12 +103,11 @@ const OverviewSection = styled.section`
       gap: 12px;
    }
    .payment{
-      border-bottom: 2px solid #d8d8d8;
-      padding: 17px 18px;
+      border-bottom: 1px solid #dadada;
+      padding: 24px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 5px;
    }
    .payment-heading{
       display: flex;
@@ -155,6 +157,8 @@ export default function Overview(){
             </div>
 
             <div id="overview-pricing">
+               <Image src={"/images/checked-square.png"} width={55} height={55} alt="Check"/>
+
                <h3>De <s>R$54,87</s> por:</h3>
 
                <div id="price">
