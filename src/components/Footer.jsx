@@ -6,8 +6,13 @@ const FooterSection = styled.footer`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 32px;
-        border-bottom: 1px solid gray;
+        padding: 32px 32px 15px 32px;
+        position: relative;
+    }
+    #moldura{
+        position: absolute;
+        width: 100%;
+        height: 50px;
     }
     #footer-heading > h4{
         font-size: 16px;
@@ -35,6 +40,8 @@ export default function Footer(){
 
                 <img src={"/images/favicon.ico"} width={35} height={35} alt="" id='footer-img'/>
             </div>
+
+            <img src="/images/moldura.png" alt="" id='moldura'/>
         </FooterSection>
     )
 }
