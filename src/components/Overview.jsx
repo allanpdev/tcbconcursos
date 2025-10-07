@@ -13,10 +13,9 @@ const OverviewSection = styled.section`
    }
    #overview-container > button{
       background: linear-gradient(to right, #004ea7, var(--destaque), #004da5);
-      margin: 32px 0;
    }
    #overview-container > h3{
-      font-size: 20px;
+      font-size: 18.5px;
       text-transform: uppercase;
       font-weight: 650;
       background: linear-gradient(to bottom, #2f3cb5, #36afff);
@@ -39,11 +38,11 @@ const OverviewSection = styled.section`
       gap: 8px;
    }
    .checklist > img{
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
    }
    .checklist > span{
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 450;
       color: #1c1346;
    }
@@ -75,11 +74,10 @@ const OverviewSection = styled.section`
       flex-direction: column;
       align-items: center;
       padding: 32px;
-      margin-top: 32px;
+      margin: 40px 0 32px 0;
    }
    #overview-pricing > h4{
       font-size: 15px;
-      /* text-transform: uppercase; */
       font-weight: 500;
       margin: 6px 0 16px 0;
    }
@@ -100,7 +98,7 @@ const OverviewSection = styled.section`
    }
    .payment{
       border: 1px solid #d8d8d8;
-      padding: 10px 18px;
+      padding: 13px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -117,7 +115,7 @@ export default function Overview(){
    return(
       <OverviewSection>
          <div id="overview-container">
-            <Image src={'/images/apostila.webp'} width={210} height={210} alt="Foto da apostila Técnico do Seguro Social"/>
+            <Image src={'/images/apostila.webp'} width={190} height={190} alt="Foto da apostila Técnico do Seguro Social"/>
 
             <h3>Conteúdo da apostila:</h3>
 
@@ -150,7 +148,7 @@ export default function Overview(){
                <div className="checklist">
                   <Image src={'/images/checked.png'} width={30} height={30} alt="Ícone checklist"/>
                   <span>Conhecimentos Específicos</span>
-               </div>               
+               </div>
             </div>
 
             <div id="overview-pricing">
