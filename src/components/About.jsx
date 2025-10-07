@@ -24,7 +24,7 @@ const AboutSection = styled.section`
       font-weight: bold;
       font-size: 18px;
       text-transform: uppercase;
-      margin: 38px 0;
+      margin: 30px 0;
    }
    & > #info-container > #info-box-container{
       display: flex;

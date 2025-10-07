@@ -16,13 +16,13 @@ const HeaderTag = styled.header`
       padding: 12px 24px;
    }
    & > #header-container > #header-logo{
-      width: 170px;
+      width: 160px;
       height: auto;
    }
    & > #header-container > #header-disccount{
       background-color: #fff;
       border-radius: 50px;
-      padding: 8px 28px;
+      padding: 8px 24px;
       display: flex;
       justify-content: center;
       align-items: center;

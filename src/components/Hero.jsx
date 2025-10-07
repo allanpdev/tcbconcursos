@@ -43,13 +43,13 @@ const MainTag = styled.main`
    }
    & > #hero-container > #hero-content > h1{
       font-weight: 600;
-      font-size: 20.5px;
+      font-size: 19.5px;
       margin: 18px 0 20px 0;
       line-height: 32px;
    }
    & > #hero-container > #hero-content > p{
       font-weight: 300;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 27px;
    }
    & > #hero-container > #hero-price{
