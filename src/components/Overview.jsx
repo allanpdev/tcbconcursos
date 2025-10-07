@@ -6,7 +6,7 @@ const OverviewSection = styled.section`
       background: #ffffff;
    }
    #overview-container{
-      padding: 32px;
+      padding: 32px 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,6 +31,7 @@ const OverviewSection = styled.section`
       flex-direction: column;
       gap: 15px;
       width: 100%;
+      margin-left: 22px;
    }
    .checklist{
       display: flex;
@@ -73,7 +74,7 @@ const OverviewSection = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 32px 24px 42px 24px;
+      padding: 32px 20px 42px 20px;
       margin: 40px 0 32px 0;
    }
    #overview-pricing > h4{
@@ -99,12 +100,12 @@ const OverviewSection = styled.section`
       gap: 12px;
    }
    .payment{
-      border: 1px solid #d8d8d8;
-      padding: 13px 18px;
+      border-bottom: 2px solid #d8d8d8;
+      padding: 17px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 8px;
+      border-radius: 5px;
    }
    .payment-heading{
       display: flex;
