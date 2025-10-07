@@ -16,13 +16,17 @@ const Div = styled.div`
    & > .guarantee-container > h2{
       font-size: 22px;
       font-weight: 600;
-      
+      text-transform: uppercase;
+      font-family: 'Nunito';
+      font-weight: 750;
    }
    & > .guarantee-container > p{
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 400;
       line-height: 25px;
       text-align: center;
+      font-family: 'Nunito';
+      color: #ececec;
    }
 `
 
