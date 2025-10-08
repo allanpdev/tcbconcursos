@@ -161,7 +161,7 @@ export default function Overview(){
             </div>
 
             <div id="overview-pricing">
-               <Image src={"/images/checked-square.png"} width={70} height={56} alt="Check"/>
+               {/* <Image src={"/images/checked-square.png"} width={70} height={56} alt="Check"/> */}
 
                <h3>De <s>R$54,87</s> por:</h3>
 
@@ -191,14 +191,14 @@ export default function Overview(){
                      <input type="radio" />
                   </div>
 
-                  {/* <div className="payment">
+                  <div className="payment">
                      <div className="payment-heading">
                         <Image src={"/images/apple.png"} width={24} height={26} alt="Pix"/>
                         <span>Apple Pay</span>
                      </div>
 
                      <input type="radio" />
-                  </div> */}
+                  </div>
 
                   <div className="payment">
                      <div className="payment-heading">
