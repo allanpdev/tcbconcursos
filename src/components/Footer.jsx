@@ -4,6 +4,7 @@ import Image from 'next/image'
 const FooterSection = styled.footer`
     &{ 
         position: relative;
+        background: #f4f5ff;
     }
     #footer-container{
         display: flex;
