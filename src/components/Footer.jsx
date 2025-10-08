@@ -4,13 +4,13 @@ import Image from 'next/image'
 const FooterSection = styled.footer`
     &{ 
         position: relative;
-        background: #f4f5ff;
+        background: #ffffff;
     }
     #footer-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 32px 32px 32px;
+        padding: 32px 32px 32px 32px;
     }
     #moldura{
         position: absolute;
