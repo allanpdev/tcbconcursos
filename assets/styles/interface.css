@@ -33,7 +33,7 @@ header{
 /* ============ Main ============ */
 main{
     padding: 36px 24px 0 24px;
-    background: url('../../assets/images/backgrounds/bg-mobile.webp');
+    /* background: url('../../assets/images/backgrounds/bg-mobile.webp'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
