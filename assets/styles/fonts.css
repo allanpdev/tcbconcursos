@@ -1,0 +1,10 @@
+@font-face{
+   font-family: 'Inter';
+   src: url('../../assets/fonts/Inter.ttf') format('truetype');
+   font-display: swap;
+}
+@font-face{
+   font-family: 'Nunito';
+   src: url('../../assets/fonts/Nunito.ttf') format('truetype');
+   font-display: swap;
+}
