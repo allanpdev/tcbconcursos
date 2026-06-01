@@ -1,0 +1,30 @@
+header{
+  width: 100%;
+  background: var(--destaque);
+}
+#header-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+}
+#header-container > #header-logo{
+  width: 160px;
+  height: 20.7px;
+}
+#header-container > #header-disccount{
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-container > #header-disccount > span{
+  color: var(--destaque);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 10px;
+  font-family: var(--inter);
+  font-size: 15.5px;
+}

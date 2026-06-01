@@ -1,0 +1,85 @@
+#hero {
+  padding: 32px 24px 0 24px;
+  background: linear-gradient(to bottom, rgba(0, 3, 36, 0.3) 0%, rgba(0, 3, 19, 0.9) 50%, #000 100%), url('/images/bg-hero.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero-content > img {
+  width: 180px;
+  height: auto;
+}
+
+#hero-content > h1 {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 18px 0 20px 0;
+  line-height: 30px;
+}
+
+#hero-content > p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #e7e7e7;
+}
+
+#hero-price {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0;
+}
+
+#hero-price > span {
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(233, 233, 233);
+  font-family: "Nunito";
+}
+
+#hero-price > span > s {
+  color: rgb(255, 30, 30);
+  text-decoration-thickness: 1px;
+  font-weight: 700;
+}
+
+#hero-price > strong {
+  margin-top: 0px;
+  font-weight: 850;
+  font-size: 43px;
+}
+
+#hero-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+#hero-cta > small {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 16px 0 8px 0;
+}

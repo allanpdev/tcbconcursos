@@ -1,0 +1,104 @@
+#reviews {
+    background-image: url('/images/bg-reviews.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+#reviews::after {
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0,0,0,0.2) 20%, rgb(0,0,0));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0,0,0,0.2) 20%, rgb(0,0,0));
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+#reviews-container{
+    padding: 48px 32px 80px 32px;
+    position: relative;
+    z-index: 2;
+}
+#reviews-container > h2 {
+    font-weight: 750;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 99;
+    margin-bottom: 36px;
+    font-family: 'Nunito';
+}
+#reviews-container > p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+    line-height: 25px;
+    margin-bottom: 80px;
+    font-family: 'Nunito';
+}
+#reviews-buy-btn{
+    background: linear-gradient(to right, #4F7812, #7cb522, #4F7812) !important;  
+}
+#reviews-slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#reviews-slider > button{
+    background: gray;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    opacity: .3;
+    position: absolute;
+}
+#reviews-slider > button:first-child{
+    left: 12px;
+}
+#reviews-slider > button:last-child{
+    right: 12px;
+}
+#reviews-slider-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    max-width: 400px;
+    width: 100%;
+    scrollbar-width: none;
+}
+#reviews-slider-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    border: 3px solid var(--destaque-secundario);
+    transition: .4s all;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+#slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    top: -45px;
+}
+.slider-dot {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50px;
+}
+.slider-dot-active {
+    background: var(--destaque-secundario);
+}

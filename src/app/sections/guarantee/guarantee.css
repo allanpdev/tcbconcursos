@@ -1,0 +1,30 @@
+#guarantee{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.95)), url("/images/bg-guarantee.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#guarantee-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 24px;
+  color: #fff;
+  gap: 24px;
+}
+#guarantee-container > h2{
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Nunito';
+  font-weight: 750;
+}
+#guarantee-container > p{
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  font-family: 'Nunito';
+  color: #ececec;
+}
