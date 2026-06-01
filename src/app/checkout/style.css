@@ -1,0 +1,38 @@
+#checkout{
+  background: linear-gradient(135deg, rgba(2,4,33,.1) 0%, rgba(2, 25, 33, 0.6) 30%, rgb(0, 0, 0) 65%), url('/images/bg-2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.checkout-step{
+  padding: 32px;
+}
+
+header{
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 32px;
+  background: linear-gradient(to right, #0e8cb6, #1bb972, #0e8cb6);
+  gap: 16px;
+}
+header > span{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  margin-left: 4px;
+}
+header > div{
+  background: #032b35;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+}

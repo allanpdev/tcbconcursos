@@ -1,0 +1,52 @@
+.identification{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+.identification > span{
+    margin-bottom: 6px;
+}
+.input-error-message{
+    display: none;
+    color: red;
+    font-size: 13px;
+    margin: 7px 0 0 6px;
+}
+.input-error .input-error-message{
+    display: block;
+}
+.input-error > .input-field > input{
+    border: 2px solid red;
+}
+.input-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+}
+.input-field > i{
+    position: absolute;
+    left: 18px;
+    color: white;
+}
+.input-field > label{
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+    font-size: 15px;
+}
+.input-field > input{
+    width: 100%;
+    padding: 18px 12px 18px 42px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.1));
+    color: #fff !important;
+   
+}.input-field > input::placeholder{
+    color: rgb(121, 121, 121);
+}

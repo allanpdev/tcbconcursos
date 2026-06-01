@@ -1,10 +1,10 @@
 #preparation-container{
   display: flex;
   flex-direction: column;
-  padding: 64px 32px 70px 32px;
+  padding: 48px 32px 64px 32px;
 }
 #preparation-container > h2{
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-weight: 750;
   margin-bottom: 38px;
@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 #preparation-container > p{
-  font-size: 19px;
+  font-size: 17px;
   line-height: 26px;
   text-align: justify;
   margin-bottom: 16px;
@@ -34,7 +34,7 @@
 }
 .preparation-checklist > span{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   color: #303030;
 }
 .preparation-checklist > img{

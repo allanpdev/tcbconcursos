@@ -1,4 +1,5 @@
 import './faq.css'
+import Button from '@/app/components/Button'
 
 export default function FAQ(){
   return(
@@ -43,10 +44,7 @@ export default function FAQ(){
         <img src="/images/woman.png" width="170" alt=""/>
         <h2>Você já tem tudo que precisa para começar</h2>
         <p>Agora, é só colocar a cara nos estudos.</p>
-        <a href="https://pay.hotmart.com/Y100344381K?off=p4hu6job" id="final-btn" className="btn analytics_click">
-          <span>Comece sua preparação</span>
-          <img src="/icons/fa-arrow-right.svg" width="20" height="20" alt='Ilustrativo de botão'/>
-        </a>
+        <Button text="Comece sua preparação" icon="/icons/fa-arrow-right.svg" variant="style3"/>
       </div>
     </section>
   )

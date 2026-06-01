@@ -1,5 +1,5 @@
 #hero {
-  padding: 32px 24px 0 24px;
+  padding: 24px 24px 0 24px;
   background: linear-gradient(to bottom, rgba(0, 3, 36, 0.3) 0%, rgba(0, 3, 19, 0.9) 50%, #000 100%), url('/images/bg-hero.webp');
   background-repeat: no-repeat;
   background-position: center;
@@ -27,21 +27,21 @@
 }
 
 #hero-content > img {
-  width: 180px;
+  width: 160px;
   height: auto;
 }
 
 #hero-content > h1 {
   font-weight: 600;
   font-size: 17px;
-  margin: 18px 0 20px 0;
+  margin: 12px 0 16px 0;
   line-height: 30px;
 }
 
 #hero-content > p {
   font-weight: 400;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 27px;
   color: #e7e7e7;
 }
 

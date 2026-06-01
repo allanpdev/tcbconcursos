@@ -12,13 +12,13 @@
   text-align: center;
 }
 #about-text > span{
-  font-size: 17px;
+  font-size: 15px;
   line-height: 25px;
 }
 #about-title{
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 30px 0;
 }
@@ -39,13 +39,13 @@
 .about-box > h3{
   color: var(--destaque-secundario);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   margin: 11px 0 9px 0;
   text-align: center;
 }
 .about-box > span{
   color: #dedede;
-  font-size: 17px;
+  font-size: 16px;
   text-align: center;
   font-weight: 400;
 }

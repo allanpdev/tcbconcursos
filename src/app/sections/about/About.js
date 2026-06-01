@@ -12,22 +12,22 @@ export default function About(){
 
         <div id="about-box-container">
           <div className="about-box">
-            <img src="/icons/info-cargo.webp" width="35" height="40" alt='Ícone ilustrativo'/>
+            <img src="/icons/info-cargo.webp" width="30" height="33" alt='Ícone ilustrativo'/>
             <h3>Cargo</h3>
             <span>Técnico do Seguro Social</span>
           </div>
           <div className="about-box">
-            <img src="/icons/info-salario.webp" width="57" height="40" alt='Ícone ilustrativo'/>
+            <img src="/icons/info-salario.webp" width="50" height="32" alt='Ícone ilustrativo'/>
             <h3>Salário inicial</h3>
             <span>R$ 6.596,09</span>
           </div>
           <div className="about-box">
-            <img src="/icons/info-exigencia.webp" width="40" height="40" alt='Ícone ilustrativo'/>
+            <img src="/icons/info-exigencia.webp" width="32" height="32" alt='Ícone ilustrativo'/>
             <h3>Escolaridade</h3>
             <span>Nível Médio</span>
           </div>
           <div className="about-box">
-            <img src="/icons/info-previsao.webp" width="40" height="40" alt='Ícone ilustrativo'/>
+            <img src="/icons/info-previsao.webp" width="32" height="32" alt='Ícone ilustrativo'/>
             <h3>Previsão de abertura</h3>
             <span>09/2026</span>
           </div>
