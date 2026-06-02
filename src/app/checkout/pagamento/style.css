@@ -1,0 +1,141 @@
+.payment-options{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 24px;
+}
+.payment-options > span{
+    margin-bottom: 12px;
+}
+.payment-option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(35, 75, 87);
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.08), 0 0 20px rgba(0,255,217,.06);
+    position: relative;
+    background: linear-gradient(to bottom right, rgba(2, 19, 23, 0), rgba(4, 152, 197, 0.264));
+}
+.payment-option > label{
+    color: #fff;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.payment-option > label > input{
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: 1px solid rgb(42, 91, 106);
+    appearance: none;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-right: 8px;
+    position: absolute;
+    right: 12px;
+}
+.payment-option > input:checked{
+    background: linear-gradient(to bottom, rgb(24, 78, 227), rgb(0, 255, 217));
+    border: none;
+}
+.payment-option > label > input::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    transform: scale(0);
+}
+.payment-option > label > input:checked::before{
+    transform: scale(1);
+}
+#credit-card-option > .expand input{
+    margin-bottom: 10px;
+    border: 1px solid rgb(35, 75, 87);
+    padding: 16px 20px;
+    border-radius: 60px;
+    background: none;
+    color: white;
+    width: 100%;
+}
+.expand{
+    background: #0e2b3b;
+    flex-direction: column;
+    transition: .3s all;
+    height: 0;
+    overflow: hidden;
+}
+.expand-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.payment-option > .expand.active{
+    /* height: 300px; */
+}
+.collapse-icon{
+    padding: 6px;
+    border: 1px solid rgb(35, 75, 87);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transform: rotate(90deg);
+    right: 24px;
+    opacity: .4;
+}
+.collapse-icon > i{
+    font-size: 13px;
+    color: #a2e2c2;
+}
+@keyframes height {
+    from{
+        height: 0;
+    }
+    to{
+        height: fit-content;
+    }
+}
+.expand > span{
+    font-size: 14px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.expand > img{
+    width: 120px;
+}
+.pix-copy{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+}
+.pix-copy > span{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pix-copy > i{
+    font-size: 20px;
+}

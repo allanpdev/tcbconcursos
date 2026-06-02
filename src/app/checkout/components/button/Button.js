@@ -1,8 +1,7 @@
 import './button.css'
-import Link from 'next/link'
 
-export default function Button({route, click}){
+export default function Button({click, type}){
   return(
-    <Link href={route} onClick={click} className="btn-checkout">Avançar</Link>
+    <button type={type} onClick={click} className="btn-checkout">Avançar</button>
   )
 }
