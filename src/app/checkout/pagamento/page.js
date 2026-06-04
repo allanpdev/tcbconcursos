@@ -1,9 +1,12 @@
 "use client"
 import './style.css'
 import {useState, useEffect} from 'react'
+import {initMercadoPago} from '@mercadopago/sdk-react'
 import Button from '../components/button/Button'
 import ProductCard from '../components/product_card/ProductCard'
 import pix from './pix'
+
+initMercadoPago('APP_USR-35cc4167-0914-4ac9-9900-defefbd12680')
 
 export default function Step2(){
   const [paymentMethod, setPaymentMethod] = useState("")
