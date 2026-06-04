@@ -19,14 +19,14 @@ export default function Step2(){
     visual: {
       hideFormTitle: true,
       style: {
-        theme: "default",
+        theme: "dark",
         customVariables:{
           textPrimaryColor: '#ffffff',
-          formBackgroundColor: "#fffff00",
+          formBackgroundColor: "#00152900",
           outlinePrimaryColor: '',
           outlineSecondaryColor: 'rgba(255,255,255,0.1)',
           baseColor: 'darkcyan',
-          formPadding: ''
+          inputBackgroundColor: 'rgba(255,255,255,0.00)'
         }
       },
     },
