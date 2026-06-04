@@ -68,44 +68,31 @@
 }
 .expand{
     background: #0e2b3b;
-    flex-direction: column;
-    transition: .3s all;
-    height: 0;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+    max-width: 100%;
 }
+.expand.open{
+    grid-template-rows: 1fr;
+}
+
 .expand-content{
-    padding: 20px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
 }
-.payment-option > .expand.active{
-    /* height: 300px; */
+.expand > div > div{
+    padding: 28px;
+    width: 100%;
+    max-width: 100%;
 }
-.collapse-icon{
-    padding: 6px;
-    border: 1px solid rgb(35, 75, 87);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    transform: rotate(90deg);
-    right: 24px;
-    opacity: .4;
-}
-.collapse-icon > i{
-    font-size: 13px;
-    color: #a2e2c2;
-}
-@keyframes height {
-    from{
-        height: 0;
-    }
-    to{
-        height: fit-content;
-    }
+.expand > div{
+    min-height: 0;
+    min-width: 0;
+    max-width: 100%;
 }
 .expand > span{
     font-size: 14px;
@@ -116,6 +103,21 @@
 }
 .expand > img{
     width: 120px;
+}
+.pix-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pix-image{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.pix-image > img{
+    border-radius: 8px;
 }
 .pix-copy{
     display: flex;
