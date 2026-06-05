@@ -7,7 +7,7 @@ export default function Hero(){
 			<div id="hero-container">
 				<div id="hero-content">
 					<img aria-hidden src="/images/apostila.webp" alt="File icon" width="180" height="180" fetchPriority='high'/>
-					<h1>Apostila Concurso INSS 2026:<br/> conquiste sua vaga como Técnico<br/> do Seguro Social</h1>
+					<h1>testeApostila Concurso INSS 2026:<br/> conquiste sua vaga como Técnico<br/> do Seguro Social</h1>
 					<p>Estude para o concurso do INSS com um material completo e atualizado, focado nos principais conteúdos cobrados na prova. São 1.500 questões comentadas e exercícios práticos para ajudar a fixar o conteúdo.</p>
 				</div>
 
