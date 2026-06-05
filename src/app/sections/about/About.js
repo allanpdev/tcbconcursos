@@ -12,11 +12,6 @@ export default function About(){
 
         <div id="about-box-container">
           <div className="about-box">
-            <img src="/icons/info-cargo.webp" width="30" height="33" alt='Ícone ilustrativo'/>
-            <h3>Cargo</h3>
-            <span>Técnico do Seguro Social</span>
-          </div>
-          <div className="about-box">
             <img src="/icons/info-salario.webp" width="50" height="32" alt='Ícone ilustrativo'/>
             <h3>Salário inicial</h3>
             <span>R$ 6.596,09</span>
