@@ -1,4 +1,5 @@
 import './reviews.css'
+import Button from '@/app/components/Button'
 
 export default function Reviews(){
     return(

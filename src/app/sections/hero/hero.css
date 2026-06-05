@@ -33,14 +33,14 @@
 
 #hero-content > h1 {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   margin: 12px 0 16px 0;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 #hero-content > p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 27px;
   color: #e7e7e7;
 }

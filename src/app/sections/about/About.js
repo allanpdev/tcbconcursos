@@ -28,7 +28,7 @@ export default function About(){
           </div>
           <div className="about-box">
             <img src="/icons/info-previsao.webp" width="32" height="32" alt='Ícone ilustrativo'/>
-            <h3>Previsão de abertura</h3>
+            <h3>Previsão de edital</h3>
             <span>09/2026</span>
           </div>
         </div>

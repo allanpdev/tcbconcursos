@@ -1,7 +1,7 @@
 #preparation-container{
   display: flex;
   flex-direction: column;
-  padding: 48px 32px 64px 32px;
+  padding: 48px 32px 32px 32px;
 }
 #preparation-container > h2{
   font-size: 18px;

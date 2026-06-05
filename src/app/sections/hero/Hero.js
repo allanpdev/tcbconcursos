@@ -19,7 +19,7 @@ export default function Hero(){
 				<div id='hero-cta'>
 					<Button text="Garantir apostila" icon="/icons/fa-arrow-right.svg" variant="style1" link="/checkout"/>
 
-					<small>⚠️ O edital irá sair em breve!</small>
+					<small>⚠️ Atenção! O edital irá sair em breve</small>
 				</div>
 			</div>
 		</main>

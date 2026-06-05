@@ -8,6 +8,7 @@ import Guarantee from './sections/guarantee/Guarantee'
 import Offer from './sections/offer/Offer'
 import FAQ from './sections/faq/FAQ'
 import Footer from './sections/footer/Footer'
+import Purchase from './sections/purchase/Purchase'
 
 export default function Home() {
   return (
@@ -16,10 +17,11 @@ export default function Home() {
       <Hero/>
       <About/>
       <Preparation/>
-      <Guarantee/>
-      <Offer/>
       <Reviews/>
       <Product/>
+      <Guarantee/>
+      <Offer/>
+      <Purchase/>
       <FAQ/>
       <Footer/>
     </div>

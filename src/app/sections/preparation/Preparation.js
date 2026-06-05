@@ -1,5 +1,4 @@
 import './preparation.css'
-import Button from '@/app/components/Button'
 export default function Preparation(){
   return(
     <section id="preparation" className="section_observer">
@@ -20,7 +19,6 @@ export default function Preparation(){
             <span>Direcionando os estudos para os conteúdos mais cobrados</span>
           </div>
         </div>
-        <Button text="Quero me preparar" icon="/icons/fa-laptop.svg" variant="style2"/>
       </div>
     </section>
   )

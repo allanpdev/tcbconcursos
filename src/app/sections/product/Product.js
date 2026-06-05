@@ -41,8 +41,6 @@ export default function Product(){
             <span>Conhecimentos Específicos</span>
           </div>
         </div>
-
-        <Button text="Conferir conteúdo" icon="/icons/fa-book2.svg" variant="style1"/>
       </div>
     </section>
   )
