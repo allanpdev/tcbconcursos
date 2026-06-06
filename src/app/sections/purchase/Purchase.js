@@ -1,6 +1,6 @@
 export default function Purchase(){
   return(
-    <div id="purchase" style={{padding: '24px'}}>
+    <div id="purchase" style={{padding: '24px 24px 48px 24px'}}>
       <div id="product-purchase">
           <div id="product-pricing">
             <span id="access-span">Acesso imediato</span>
@@ -43,10 +43,10 @@ export default function Purchase(){
             </div>
           </div>
         </div>
-        <a style={{background: '#28ac96'}} href="/checkout.html" id="payment-buy-btn" className="btn analytics_click">
+        {/* <a style={{background: '#28ac96'}} href="/checkout.html" id="payment-buy-btn" className="btn analytics_click">
           <img src="/icons/fa-laptop.svg" width="25" height="25" alt='Ilustrativo de botão'/>
           <span style={{fontSize: '15px', fontFamily: 'Inter'}}>Acessar material</span>
-        </a>
+        </a> */}
     </div>
   )
 }

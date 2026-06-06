@@ -1,14 +1,14 @@
 import './product.css'
-import Button from '@/app/components/Button'
 
 export default function Product(){
   return(
     <section id="product" className="section_observer">
       <div id='product-container'>
         <div id="product-intro">
-          <img src="/images/apostila.webp" width="160" alt=""/>
-            <h3>O material que você precisa para ser aprovado</h3>
-          <p>O conteúdo da apostila foi planejado de acordo com as principais disciplinas exigidas no concurso, para que você estude de forma direcionada até a aprovação.</p>
+          <img src="/images/im.png" width="160" alt=""/>
+            <h3>A apostila que você precisa para ser aprovado</h3>
+            {/* <p>O conteúdo da apostila foi planejado de acordo com as principais disciplinas exigidas no concurso, para que você estude de forma direcionada até a aprovação.</p> */}
+            <p>O material reúne as disciplinas mais exigidas no concurso, ajudando você a estudar de forma mais estratégica e direcionada para a prova.</p>
         </div>
         <div id="product-summary">
           <div className="product-summary-item">

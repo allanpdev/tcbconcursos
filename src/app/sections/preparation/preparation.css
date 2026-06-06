@@ -16,10 +16,11 @@
   flex-direction: column;
 }
 #preparation-container > p{
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
   text-align: justify;
   margin-bottom: 16px;
+  font-family: 'Nunito'
 }
 #preparation-checklist-container{
   display: flex;

@@ -57,8 +57,8 @@ img{
   letter-spacing: .3px;
   text-decoration: none;
 }
-.blue-outline-dark{
-  outline: 8px solid #001c2e;
+.darkblue-outline{
+  outline: 9px solid #001725;
 }
 .blue-outline{
   outline: 8px solid #b8e4ff;
@@ -74,14 +74,8 @@ img{
   border-radius: 50px;
 }
 .btn-style4{
-  background: linear-gradient(to right, #ff9900, rgb(236, 200, 0), #ff9900);
-  background: linear-gradient(to right, #00336e, var(--destaque), #003471);
-  background: linear-gradient(to right, #1e520d, #83dd14, #1e520d) !important;
-  background: none;
+  background: linear-gradient(to right, #1e520d, #73c212, #1e520d);
   color: #fff;
-}
-.btn-style4 > img{
-  display: none;
 }
 .btn > a {
   color: #fff;

@@ -26,6 +26,8 @@ export default function Reviews(){
               <img src="/icons/fa-arrow-right.svg" alt='Próximo'/>
             </button>
           </div>
+
+           <Button text="Conferir material" icon="/icons/fa-arrow-right.svg" variant="style4" link="/checkout"/>
         </div>
       </section>
     )
