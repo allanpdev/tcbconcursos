@@ -1,5 +1,4 @@
 import './faq.css'
-import Button from '@/app/components/Button'
 
 export default function FAQ(){
   return(
@@ -38,13 +37,6 @@ export default function FAQ(){
             <p>Sim. Como a apostila é enviada em PDF, você pode estudar digitalmente ou imprimir o material da forma que preferir.</p>
           </details>
         </div>
-      </div>
-
-      <div id="final-cta">
-        <img src="/images/woman.png" width="170" alt=""/>
-        <h2>Você já tem tudo que precisa para começar</h2>
-        <p>Agora, é só colocar a cara nos estudos.</p>
-        <Button text="Comece sua preparação" icon="/icons/fa-arrow-right.svg" variant="style3"/>
       </div>
     </section>
   )

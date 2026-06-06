@@ -75,32 +75,3 @@
   color: #000000;
   font-size: 16px;
 }
-
-/* ============ Final ============= */
-#final-cta{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 32px 54px 32px;
-    align-items: center;
-}
-#final-cta > img{
-  border-radius: 50%;
-  box-shadow: 0px 24px 24px rgba(0,0,0,0.1);
-}
-#final-cta > h2{
-    font-size: 20px;
-    margin: 18px 0 10px 0;
-}
-#final-cta > p{
-    font-size: 18px;
-    margin-bottom: 12px;
-}
-#final-btn{
-  border-radius: 50px;
-  margin-top: 12px;
-  background: linear-gradient(to bottom right, rgb(255, 81, 0), orange);
-  font-weight: 700;
-  padding: 12px 0;
-}

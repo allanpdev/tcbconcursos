@@ -1,4 +1,5 @@
 import './offer.css'
+import Button from '@/app/components/Button'
 
 export default function Offer(){
   return(
@@ -17,6 +18,12 @@ export default function Offer(){
             <p>Receba um bônus com 1.500 questões de concursos anteriores, incluindo gabarito e comentários explicativos.</p>
           </div>
         </div>
+      </div>
+      <div id="final-cta">
+        <img src="/images/woman2.png" width="170" alt=""/>
+        <h2>"Você já tem tudo que precisa para começar"</h2>
+        <p>-Agora, é só colocar a cara nos estudos.</p>
+        <Button text="Comece sua preparação" icon="/icons/fa-arrow-right.svg" variant="style3"/>
       </div>
     </section>
   )
