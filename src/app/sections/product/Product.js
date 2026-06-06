@@ -1,4 +1,5 @@
 import './product.css'
+import Button from '@/app/components/Button'
 
 export default function Product(){
   return(
@@ -6,7 +7,7 @@ export default function Product(){
       <div id='product-container'>
         <div id="product-intro">
           <img src="/images/im.png" width="160" alt=""/>
-            <h3>A apostila que você precisa para ser aprovado</h3>
+            <h3>Um preparatório completo para acelerar sua aprovação</h3>
             {/* <p>O conteúdo da apostila foi planejado de acordo com as principais disciplinas exigidas no concurso, para que você estude de forma direcionada até a aprovação.</p> */}
             <p>O material reúne as disciplinas mais exigidas no concurso, ajudando você a estudar de forma mais estratégica e direcionada para a prova.</p>
         </div>
@@ -41,6 +42,8 @@ export default function Product(){
             <span>Conhecimentos Específicos</span>
           </div>
         </div>
+
+        <Button text="Conferir material" icon="/icons/fa-arrow-right.svg" variant="style1" link="/checkout"/>
       </div>
     </section>
   )

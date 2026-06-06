@@ -17,7 +17,7 @@
     position: absolute;
 }
 #reviews-container{
-    padding: 48px 32px 64px 32px;
+    padding: 48px 32px 32px 32px;
     position: relative;
     z-index: 2;
 }
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 #reviews-slider > button{
     background: gray;

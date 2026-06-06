@@ -1,5 +1,4 @@
 import './reviews.css'
-import Button from '@/app/components/Button'
 
 export default function Reviews(){
     return(
@@ -26,8 +25,6 @@ export default function Reviews(){
               <img src="/icons/fa-arrow-right.svg" alt='Próximo'/>
             </button>
           </div>
-
-           <Button text="Conferir material" icon="/icons/fa-arrow-right.svg" variant="style4" link="/checkout"/>
         </div>
       </section>
     )
