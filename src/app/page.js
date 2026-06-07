@@ -20,9 +20,7 @@ export default function Home() {
       <Reviews/>
       <Product/>
       <Guarantee/>
-      <Purchase/>
       <Offer/>
-      
       <FAQ/>
       <Footer/>
     </div>

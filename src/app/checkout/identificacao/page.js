@@ -4,6 +4,7 @@ import {useState} from 'react'
 import {useRouter} from 'next/navigation'
 import ProductCard from '../components/product_card/ProductCard'
 import Button from '../components/button/Button'
+import sendUserData from './userInfo'
 
 function maskPhone(v){
   const digits = v.replace(/\D/g, "").slice(0, 11)
@@ -65,13 +66,7 @@ export default function Step1(){
     e.preventDefault()
     setTouched({name: true, email: true, phone: true})
     if(!isValid) return
-    fetch('/api/backend', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(values)
-    })
+    sendUserData(values)
     router.push('/checkout/pagamento')
   }
 

@@ -6,7 +6,7 @@ import {initMercadoPago, Payment} from '@mercadopago/sdk-react'
 import ProductCard from '../components/product_card/ProductCard'
 import Skeleton from '../components/Skeleton'
 
-initMercadoPago('TEST-5af2094b-0f07-4c2a-9b1d-9b084c88073d', {locale: 'pt-BR'})
+initMercadoPago('APP_USR-76b08117-c6a6-4c50-b74e-bd5d309c58c1', {locale: 'pt-BR'})
 
 export default function Step2(){
   const [isLoading, setIsLoading] = useState(true)
@@ -45,6 +45,7 @@ export default function Step2(){
       })
         .then((res) => res.json())
         .then((res) => {
+          console.log(res)
           localStorage.setItem('paymentId', res.id)
           router.push('/checkout/download')
           resolve()

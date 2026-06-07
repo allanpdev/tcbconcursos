@@ -6,7 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 24px 32px 48px 32px;
+	padding: 48px 32px 48px 32px;
 	font-family: var(--font-nunito);
 	position: relative;
 	gap: 40px;
@@ -78,7 +78,7 @@
 }
 #final-cta > p{
     font-size: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 #final-btn{
   border-radius: 50px;

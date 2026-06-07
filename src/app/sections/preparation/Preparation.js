@@ -4,24 +4,21 @@ export default function Preparation(){
   return(
     <section id="preparation" className="section_observer">
       <div id="preparation-container">
-        <h2>O que você faria se<br/> fosse demitido hoje?</h2>
-        <p>Uma decisão da empresa, uma reestruturação, uma redução de custos. E de repente, sua vida muda completamente.</p>
-        <p>Sem aviso. Sem tempo para se preparar.</p>
-        <p>Nessas horas você percebe que sua estabilidade sempre esteve nas mãos de outra pessoa.</p>
-        <p>Mas existe uma diferença entre viver preocupado com o futuro e começar a construir algo mais estável.</p>
-        <p>E é nesse momento que entram os concursos públicos. 🏛️</p>
+        <h2>Por que se preparar<br/> antes do edital?</h2>
+        <p>Enquanto a maioria dos candidatos ainda aguarda a publicação do edital, os mais preparados já estão:</p>
+
         <div id="preparation-checklist-container">
           <div className="preparation-checklist">
             <img src="/icons/check.webp" width="23" height="23" alt="" />
-            <span>Você constrói estabilidade, sem depender do que está fora do seu controle</span>
+            <span>Desenvolvendo ritmo de estudo, com menos horas por dia e mais consistência</span>
           </div>
           <div className="preparation-checklist">
             <img src="/icons/check.webp" width="23" height="23" alt="" />
-            <span>Passa a planejar o futuro com mais segurança e previsibilidade</span>
+            <span>Fazendo exercícios e revisões do conteúdo aprendido</span>
           </div>
           <div className="preparation-checklist">
             <img src="/icons/check.webp" width="23" height="23" alt="" />
-            <span>E não depende mais do temperamento do chefe para se manter na empresa</span>
+            <span>Direcionando os estudos para os conteúdos mais cobrados</span>
           </div>
         </div>
       </div>
