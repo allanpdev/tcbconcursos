@@ -41,7 +41,7 @@
 	justify-content: center;
 	padding: 48px 24px;
 	gap: 16px;
-	box-shadow: 0 0 24px rgba(247, 140, 0, 0.293); 
+	box-shadow: 0 0 24px rgba(247, 140, 0, 0.227); 
 }
 #offer-container > #offer-box-container > .offer-box > img{
 	max-width: 120px;
@@ -71,16 +71,14 @@
 }
 #final-cta > img{
   border-radius: 50%;
-  
-	/* border: 1px solid rgba(0, 0, 0, 0.242); */
 }
 #final-cta > h2{
     font-size: 20px;
-    margin: 18px 0 10px 0;
+    margin: 18px 0 16px 0;
 }
 #final-cta > p{
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 }
 #final-btn{
   border-radius: 50px;

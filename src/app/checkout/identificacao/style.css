@@ -1,3 +1,6 @@
+#first-step{
+    padding: 32px;
+}
 .identification{
     display: flex;
     flex-direction: column;

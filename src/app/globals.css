@@ -61,7 +61,7 @@ img{
   outline: 9px solid #00121d;
 }
 .blue-outline{
-  outline: 8px solid #b8e4ff;
+  outline: 9px solid #b8e4ff69;
 }
 .btn-style1{
   background: linear-gradient(to right, #00336e, var(--destaque), #003471);

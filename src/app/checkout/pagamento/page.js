@@ -1,11 +1,15 @@
 "use client"
 import './style.css'
-import {Payment, initMercadoPago} from '@mercadopago/sdk-react'
+import {useState} from 'react'
+import {useRouter} from 'next/navigation'
+import {initMercadoPago, Payment, StatusScreen} from '@mercadopago/sdk-react'
 import ProductCard from '../components/product_card/ProductCard'
 
-initMercadoPago('APP_USR-35cc4167-0914-4ac9-9900-defefbd12680', {locale: 'pt-BR'})
-console.log(Payment)
+initMercadoPago('TEST-5af2094b-0f07-4c2a-9b1d-9b084c88073d', {locale: 'pt-BR'})
+
 export default function Step2(){
+  const [paymentId, setPaymentId] = useState(null)
+
   const initialization = {
     amount: 19.90,
     payer: {
@@ -19,12 +23,11 @@ export default function Step2(){
     visual: {
       hideFormTitle: true,
       style: {
-        theme: "dark",
+        theme: "default",
         customVariables:{
-          textPrimaryColor: '#ffffff',
-          formBackgroundColor: "#00152900",
-          outlinePrimaryColor: '',
-          outlineSecondaryColor: 'rgba(255,255,255,0.1)',
+          
+          
+          
           baseColor: 'darkcyan',
           inputBackgroundColor: 'rgba(255,255,255,0.00)'
         }
@@ -39,12 +42,22 @@ export default function Step2(){
   }
 
   const onSubmit = async ({selectedPaymentMethod, formData}) => {
-    const response = await fetch('/api/process-payment', {
-      method: 'POST',
-      header: {'Content-Type': 'application/json'},
-      body: JSON.stringify(formData)
+    const router = useRouter()
+    return new Promise((resolve, reject) => {
+      fetch('/api/process_payment', {
+        method: 'POST',
+        header: {'Content-Type': 'application/json'},
+        body: JSON.stringify(formData)
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          resolve()
+          router.push(`/checkout/download?paymentId=${res.id}`)
+        })
+        .catch((err) => {
+          reject(err)
+        })
     })
-    return response.json()
   }
   const onError = (error) => {console.error(error)}
   const onReady = () => {}
@@ -54,8 +67,14 @@ export default function Step2(){
         <ProductCard/>
         <span className="slide-down">Faça o pagamento com:</span>
       </div>
-        
-      <Payment initialization={initialization} customization={customization} onSubmit={onSubmit} onError={onError} onReady={onReady}/>
+      <div style={{padding: '24px'}}>
+        <Payment initialization={initialization} customization={customization} onSubmit={onSubmit} onError={onError} onReady={onReady}/>
+      </div>
+      {!paymentId ? (
+        ""
+      ) : (
+        ""
+      )}
     </div>
   )
 }
