@@ -40,7 +40,7 @@ export default function Step2(){
     return new Promise((resolve, reject) => {
       fetch('/api/process_payment', {
         method: 'POST',
-        header: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formData)
       })
         .then((res) => res.json())
