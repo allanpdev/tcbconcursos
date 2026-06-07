@@ -2,13 +2,15 @@
 import './style.css'
 import {useState} from 'react'
 import {useRouter} from 'next/navigation'
-import {initMercadoPago, Payment, StatusScreen} from '@mercadopago/sdk-react'
+import {initMercadoPago, Payment} from '@mercadopago/sdk-react'
 import ProductCard from '../components/product_card/ProductCard'
+import Skeleton from '../components/Skeleton'
 
 initMercadoPago('TEST-5af2094b-0f07-4c2a-9b1d-9b084c88073d', {locale: 'pt-BR'})
 
 export default function Step2(){
-  const [paymentId, setPaymentId] = useState(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const router = useRouter()
 
   const initialization = {
     amount: 19.90,
@@ -24,13 +26,6 @@ export default function Step2(){
       hideFormTitle: true,
       style: {
         theme: "default",
-        customVariables:{
-          
-          
-          
-          baseColor: 'darkcyan',
-          inputBackgroundColor: 'rgba(255,255,255,0.00)'
-        }
       },
     },
     paymentMethods: {
@@ -42,7 +37,6 @@ export default function Step2(){
   }
 
   const onSubmit = async ({selectedPaymentMethod, formData}) => {
-    const router = useRouter()
     return new Promise((resolve, reject) => {
       fetch('/api/process_payment', {
         method: 'POST',
@@ -60,21 +54,21 @@ export default function Step2(){
     })
   }
   const onError = (error) => {console.error(error)}
-  const onReady = () => {}
+  const onReady = () => setIsLoading(false)
   return(
     <div id="second-step" className="checkout-step">
       <div style={{padding: '24px 24px 0 24px'}}>
         <ProductCard/>
-        <span className="slide-down">Faça o pagamento com:</span>
+        <span className="slide-down">Escolha um método de pagamento:</span>
       </div>
       <div style={{padding: '24px'}}>
-        <Payment initialization={initialization} customization={customization} onSubmit={onSubmit} onError={onError} onReady={onReady}/>
+        {isLoading && (
+          <Skeleton/>
+        )}
+        <div style={{display: isLoading ? 'none': 'block'}}>
+          <Payment initialization={initialization} customization={customization} onSubmit={onSubmit} onError={onError} onReady={onReady}/>
+        </div>
       </div>
-      {!paymentId ? (
-        ""
-      ) : (
-        ""
-      )}
     </div>
   )
 }
