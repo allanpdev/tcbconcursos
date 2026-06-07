@@ -47,10 +47,15 @@
     border: 1px solid rgba(255, 255, 255, 0.09);
     font-size: 14px;
     font-weight: 400;
-    background: none;
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0),rgb(1, 30, 37));
     color: #fff !important;
-   
-}.input-field > input::placeholder{
+}
+.input-field > input::placeholder{
     color: rgb(121, 121, 121);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(1, 30, 37)  inset;
+  -webkit-text-fill-color: #fff;
 }

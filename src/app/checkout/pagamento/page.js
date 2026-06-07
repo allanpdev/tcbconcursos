@@ -45,8 +45,8 @@ export default function Step2(){
       })
         .then((res) => res.json())
         .then((res) => {
-          resolve()
           router.push(`/checkout/download?paymentId=${res.id}`)
+          resolve()
         })
         .catch((err) => {
           reject(err)
