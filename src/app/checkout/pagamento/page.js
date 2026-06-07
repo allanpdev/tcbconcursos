@@ -45,7 +45,8 @@ export default function Step2(){
       })
         .then((res) => res.json())
         .then((res) => {
-          router.push(`/checkout/download?paymentId=${res.id}`)
+          localStorage.setItem('paymentId', res.id)
+          router.push('/checkout/download')
           resolve()
         })
         .catch((err) => {

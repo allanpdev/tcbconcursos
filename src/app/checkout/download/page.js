@@ -1,7 +1,7 @@
 "use client"
 import './style.css'
 import {initMercadoPago, StatusScreen} from '@mercadopago/sdk-react'
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import {useSearchParams} from 'next/navigation'
 import Skeleton from '../components/Skeleton'
 
@@ -9,8 +9,11 @@ initMercadoPago('TEST-5af2094b-0f07-4c2a-9b1d-9b084c88073d', {locale: 'pt-BR'})
 
 export default function Step3(){
   const [isLoading, setIsLoading] = useState(true)
-  const searchParams = useSearchParams()
-  const paymentId = searchParams.get('paymentId')
+  const [paymentId, setPaymentId] = useState(null)
+  useEffect(() => {
+    const id = localStorage.getItem('paymentId')
+    setPaymentId(id)
+  }, [])
 
   const customization = {
     visual: {
